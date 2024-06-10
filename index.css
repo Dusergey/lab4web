@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	padding: 0;
+	margin: 0;
+}
+body{
+	overflow-x: hidden;
+	background-color: #f8f9fa;
+}
+#wrapper{
+	top: 2rem;
+	position: relative;
+	width: 70%;
+	left: 15%;
+}
+#katalog{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+#katalog h1{
+	font-size: 3.4rem;
+	position: relative;
+	left: 1rem;
+}
+#katalog ul{
+	top: 2rem;
+	left: -.5rem;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	transition: .4s;
+}
+#katalog ul li {
+	cursor: pointer;
+	margin: .4rem .5rem; 
+	padding: .5rem 1rem; 
+	transition: .2s;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 1.5rem;
+}
+
+
+#buffer{
+	margin-top: 3rem;
+	display: flex;
+	align-items: baseline;
+	justify-content: flex-end;
+}
+#buffer div{
+	position: relative;
+	right: .25rem;
+	padding: 1rem 3rem;
+	border-radius: 1.7rem;
+	background-color: white;
+}
+#buffer img{
+	position: relative;
+	top: .2rem;
+	margin-left: 2rem;
+	width: .9rem;
+	height: .9rem;
+}
+#buffer2{
+	display: none;
+	margin-top: 3rem;
+	display: flex;
+	align-items: baseline;
+	justify-content: flex-start;
+}
+#buffer2 div{
+	display: none;
+	position: relative;
+	right: .25rem;
+	padding: .25rem 1rem;
+}
+#buffer2 img{
+	position: relative;
+	top: .3rem;
+	margin-left: 2rem;
+	margin-right: .75rem;
+	width: 1.3rem;
+	height: 1.3rem;
+}
+#main{
+	display: flex;
+}
+
+#filters{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: flex-start;
+}
+
+
+#fBrand{
+	display: flex;
+	flex-direction: column;
+}
+#fBrand h3{
+	font-weight: bold;
+}
+.brand_item{
+	cursor: pointer;
+	display: flex;
+	align-items: baseline;
+	margin: .5rem 0;
+}
+.brand_item img{
+	position: relative;
+	width: 1rem;
+	height: 1rem;
+	margin: 0 .3rem 0 0;
+	top: .2rem;
+}
+
+#fPrice{
+	margin-top: 2.3rem;
+	display: flex;
+	flex-direction: column;
+}
+#fPrice h3{
+	font-weight: bold;
+}
+.price_item{
+	margin-top: .4rem;
+	align-items: baseline;
+	display: flex;
+}
+.price_item input{
+	padding: .2rem;
+	font-size: 1.1rem;
+	width: 10rem;
+	margin: 0 .5rem;
+}
+
+#slider{
+	margin-top: 2rem;
+	width: 23rem;
+}
+
+#fCapacity{
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+#fCapacity h3{
+	font-weight: bold;
+}
+.capacity_item{
+	cursor: pointer;
+	display: flex;
+	align-items: baseline;
+	margin: .5rem 0;
+}
+.capacity_item img{
+	position: relative;
+	width: 1rem;
+	height: 1rem;
+	margin: 0 .3rem 0 0;
+	top: .2rem;
+}
+
+
+
+#sell-items{
+	width:50%;
+	min-width:768px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 2rem;
+}
+.sell-item{
+	margin: 1rem;
+	flex-grow: 0;
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+	height: fit-content;
+	border-radius: .8rem;
+	background-color: #fff;
+}
+.sell-item p{
+	position: relative;
+	padding: .3rem;
+	font-size: 1.3rem;
+}
+.sell-item p:nth-child(3){
+	top: -1.0rem;
+}
+.sell-item p:nth-child(4){
+	top: -.8rem;
+}
+.sell-item a{
+	top: -.3rem;
+	cursor: pointer;
+	white-space: nowrap;
+	align-self: flex-start;
+	text-align: center;
+	width: 40%;
+	padding: .6rem 0;
+	border-radius: .4rem;
+	background-color: #212529;
+	position: relative;
+	color: white;
+	min-width: 118px;
+}
+.heart{
+	align-self: flex-end;
+	position: relative;
+	width: 2rem;
+	height: 2rem;
+	top: 2rem;
+	padding: .7rem;
+	border-radius: 1.2rem;
+	right: 1.5rem;
+	z-index: 3;
+	background-color: #e8ecef;
+}
+discount{
+	align-self: flex-start;
+	position: relative;
+	width: 2rem;
+	height: 2rem;
+	top: -20rem;
+	padding: .7rem;
+	border-radius: 1.2rem;
+	right: 1.5rem;
+	z-index: 3;
+	background-color: #e8ecef;
+}
+.sell-item .mainImg{
+	position: relative;
+	width: 100%;
+}
+.sell-item p, .sell-item a, sell-item img{
+	margin: .5rem;
+}
+@media all and (max-width: 1280px){
+	#buffer2{
+		display: block;
+	}
+	#buffer2 div{
+		display: block;
+	}
+	#wrapper{
+		width: 90%;
+		left: 5%;
+	}
+	#main{
+		width: 100%;
+	}
+	#filters{
+		display: none;
+		justify-content: center;
+	}
+	#sell-items{
+		width: 100%;
+		min-width:0;
+		justify-content: center;
+	}
+	.sell-item{
+		width: 42%;
+	}
+}
+@media all and (max-width: 768px){
+	#katalog{
+		position: relative;
+		width: 90%;
+		left: 7%;
+		display: flex;
+		flex-direction: column;
+	}
+	#wrapper{
+		width: 90%;
+		left: 5%;
+	}
+	#main{
+		width: 100%;
+	}
+	#filters{
+		display: none;
+		justify-content: center;
+	}
+	#sell-items{
+		width: 100%;
+		min-width:0;
+		justify-content: center;
+	}
+	.sell-item{
+		width: 100%;
+	}
+}
